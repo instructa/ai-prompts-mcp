@@ -1,0 +1,8 @@
+# environment variables
+.env
+
+# dirs
+node_modules
+dist
+.wrangler
+.vercel

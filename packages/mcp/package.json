@@ -1,0 +1,29 @@
+{
+  "name": "mcp",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npx --yes listhen ./dist/src/app.js",
+    "serve": "PORT=3001 npx --yes listhen ./src/app.ts",
+    "inspector": "concurrently 'pnpm run serve' 'npx @modelcontextprotocol/inspector'"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "axios": "^1.8.1",
+    "dotenv": "^16.4.7",
+    "fuse.js": "^7.1.0",
+    "h3": "^1.8.2",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.0",
+    "concurrently": "^9.1.2",
+    "typescript": "^4.9.5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@9.4.0"
+}

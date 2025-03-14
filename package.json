@@ -1,0 +1,20 @@
+{
+  "name": "prompts",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:mcp": "pnpm --filter mcp build",
+    "dev:mcp": "pnpm --filter mcp dev",
+    "build:api": "pnpm --filter api build",
+    "dev:api": "pnpm --filter api dev",
+    "start:mcp": "pnpm --filter mcp start",
+    "build": "pnpm recursive run build",
+    "test": "pnpm recursive run test"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
